@@ -1,0 +1,194 @@
+/*
+#687864
+#31708e
+#5085a5
+#8fc1e3
+#f7f9fb
+*/
+
+* {
+	font-family: 'Merriweather', serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+#wrapper {
+	padding: 0;
+	overflow-x: hidden;
+	display: none;
+	animation-duration: 1.5s;
+}
+
+h1 {
+	color: #687864;
+}
+
+h2 {
+	color: #5085a5;
+}
+
+h4 {
+	color: #8fc1e3;
+}
+
+nav {
+	height: 80px;
+	transition: background-color 1s ease;
+}
+
+nav li a {
+	font-size: 18px;
+	color: white;
+	margin: 0px 2vw;
+	border: 2px solid transparent;
+}
+
+nav li {
+	display: none;
+}
+
+nav li a:hover {
+	border: 2px solid white;
+	transform: scale(1.1);
+	color: white;
+}
+
+.navbar.solid {
+	background-color: #31708e;
+}
+
+#myNavbar {
+	max-width: 50vw;
+}
+
+#logo {
+	width: 10vw;
+	margin-left: 5vw;
+	display: none;
+}
+
+.activate {
+	border: 2px solid white;
+	transform: scale(1.1);
+}
+
+#slider {
+	transition: transform 3s ease;
+}
+
+#slider h1 {
+	color: white;
+	font-size: 4.5rem;
+}
+
+#slider p {
+	font-size: 2rem;
+}
+
+#slider img {
+	max-height: 100vh;
+	width: 100%;
+	filter: brightness(80%);
+/*
+	filter: blur(px);
+	filter: contrast(%);
+	filter: grayscale(%);
+	filter: hue-rotate(deg);
+	filter: invert(%);
+	filter: opacity(%);
+	filter: saturate(%);
+	filter: sepia(%);
+*/
+}
+
+.carousel-caption {
+	top: 40%;
+}
+
+.carousel-caption h1 {
+	display: none;
+}
+
+.carousel-caption p {
+	display: none;
+}
+
+#aboutUs {
+	background-color: #f7f9fb;
+}
+
+#aboutUs img {
+	border-radius: 20px;
+	width: 100%;
+}
+
+#aboutText {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#aboutUs li {
+	margin: 1vh;
+	list-style: none;
+}
+
+.topic {
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-bottom: 3%;
+	border-bottom: 2px solid #8fc1e3;
+}
+
+#products-services {
+	position: relative;
+}
+
+#products-services::after {
+	content: "";
+	background-image: url(img/tools.jpg);
+	background-attachment: fixed;
+	/*  opacity: .5;*/
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	background-size: cover;
+	z-index: -1;
+
+	filter: brightness(40%);
+
+}
+
+.fa,
+.far {
+	font-size: 2.5rem;
+	color: #31708e;
+}
+
+#contact {
+	background-color: #f7f9fb;
+}
+
+#contact p,
+#aboutText p,
+#aboutText li,
+#products-services p {
+	font-size: 1.2rem;
+	color: #5085a5;
+}
+
+#products-services h4 {
+	color: #5085a5
+}
+
+footer {
+	color: white;
+	background-color: #31708e;
+}
+
+footer p {
+	margin: 0;
+}
