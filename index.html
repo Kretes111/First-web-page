@@ -1,7 +1,6 @@
 <!--
 kompatybilnosc
 responsywność
-przeskakiwanie active buttonow przy przewijaniu
 czy ma być slider czy sticky background?
 dwa języki
 wykupic logo
@@ -48,13 +47,13 @@ wykupic logo
 							<a class="nav-link activate" href="#slider">Home<span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#aboutUs">About Us</a>
+							<a class="nav-link" href="#spanAboutUs">About Us</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link " href="#products-services">Products &amp; Services</a>
+							<a class="nav-link" href="#spanProducts-services">Products &amp; Services</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#contact">Contact</a>
+							<a class="nav-link" href="#spanContact">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -63,7 +62,8 @@ wykupic logo
 
 
 		<!--	carousel-->
-		<section id="slider" class="carousel carousel-fade slide row" data-ride="carousel" data-pause="false" data-interval="7000">
+		<section id="slider" class="carousel carousel-fade slide row section" data-ride="carousel" data-pause="false" data-interval="7000">
+			<span id="spanSlider"></span>
 
 			<!--				indicators-->
 			<ol class="carousel-indicators">
@@ -135,7 +135,8 @@ wykupic logo
 
 		<!--		about us section-->
 
-		<section id="aboutUs" class="container-fluid p-5">
+		<section id="aboutUs" class="container-fluid p-5 section">
+			<span id="spanAboutUs"></span>
 			<div class="text-center topic">
 				<h1 style="color:#687864">About Vann Eco</h1>
 			</div>
@@ -163,7 +164,8 @@ wykupic logo
 
 		<!--		Products & Serices-->
 
-		<section id="products-services" class="container-fluid p-5">
+		<section id="products-services" class="container-fluid p-5 section">
+		<span id="spanProducts-services"></span>
 			<div class="text-center topic">
 				<h1>Products &amp; Services</h1>
 			</div>
@@ -253,7 +255,8 @@ wykupic logo
 
 		<!--		Contact-->
 
-		<section id="contact" class="container-fluid p-5">
+		<section id="contact" class="container-fluid p-5 section">
+		<span id="spanContact"></span>
 			<div class="text-center topic">
 				<h1>Contanct Us</h1>
 			</div>

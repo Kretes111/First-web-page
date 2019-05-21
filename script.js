@@ -17,7 +17,7 @@ $(document).ready(function () {
 
 	setTimeout(function () {
 		$(".carousel-caption h1, .carousel-caption p").removeClass("animated slideInUp");
-	}, 4000);
+	}, 1600);
 
 	setTimeout(function () {
 		$("nav li:nth-child(4)").css("display", "block");
@@ -52,18 +52,29 @@ $(document).ready(function () {
 
 
 	//navbar and bottons effects
-	$("#myNavbar a").click(function () {
-		$("#myNavbar a").removeClass("activate");
-		$(this).addClass("activate");
-	});
+	//	$("#myNavbar a").click(function () {
+	//		$("#myNavbar.activate").removeClass("activate");
+	//		$(this).addClass("activate");
+	//	});
 
 	$(window).scroll(function () {
+		let scrollDistance = $(window).scrollTop();
+		$(".section").each(function (i) {
+			if ($(this).position().top - 75 <= scrollDistance) {
+				$(".nav-link.activate").removeClass("activate");
+				$(".nav-link").eq(i).addClass("activate");
+			}
+		});
+
 		if ($(window).scrollTop() > 10) {
 			$(".navbar").addClass("solid");
 		} else {
 			$(".navbar").removeClass("solid");
 		}
 	});
+
 	//end navbar and bottons effects
+	
+	
 
 });
