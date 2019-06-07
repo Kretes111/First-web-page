@@ -20,7 +20,7 @@ section {
 
 section span {
 	position: absolute;
-	top: -74px;
+/*	top: -74px;*/
 }
 
 #wrapper {
@@ -60,6 +60,7 @@ nav li {
 
 nav li a:hover {
 	border: 2px solid white;
+	border-radius: 8px;
 	transform: scale(1.1);
 	color: white;
 }
@@ -80,6 +81,7 @@ nav li a:hover {
 
 .activate {
 	border: 2px solid white;
+	border-radius: 8px;
 	transform: scale(1.1);
 }
 
@@ -201,3 +203,4 @@ footer {
 footer p {
 	margin: 0;
 }
+
